@@ -15,3 +15,4 @@
     WantedBy=multi-user.target
 ```
 - enable the service: sudo systemctl start ota.service
+- install package: sudo apt-get install git rsync
