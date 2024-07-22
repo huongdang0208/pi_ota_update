@@ -1,6 +1,13 @@
 from flask import Flask
+import pytz
+from datetime import datetime
 
 from pages import bp
+
+IST = pytz.timezone('Asia/Saigon')
+raw_TS = datetime.now(IST)
+date_now = raw_TS.strftime('%d %b %Y')
+print('Date: ', date_now)
 
 def create_app():
     app = Flask(__name__)
