@@ -1,0 +1,12 @@
+[Unit]
+Description=Over-the-Air Application
+After=network.target
+
+[Service]
+User=thuhuong
+WorkingDirectory=/home/thuhuong/ota_demo
+ExecStart=/home/thuhuong/ota_demo/env/bin/python /home/thuhuong/ota_demo/board/>
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
