@@ -24,7 +24,7 @@ if [ $LOCAL != $REMOTE ]; then
     rsync -a $OTA_DIR/ $APP_DIR/
     
     # Restart the application service
-    sudo systemctl restart ota_app.service
+    sudo systemctl restart your_application.service
 else
     echo "Repository is up to date."
 fi
